@@ -16,4 +16,13 @@
         <property name="sqlSessionTemplate" ref="sessionTemplate"/>
     </bean>
 
+    <bean id="SeedDao" class="dao.imp.Seed_dao_imp">
+        <property name="sqlSessionTemplate" ref="sessionTemplate"/>
+    </bean>
+
+    <bean id="SeedSer" class="service.imp.Seed_ser_imp"/>
+
+
+
+
 </beans>
