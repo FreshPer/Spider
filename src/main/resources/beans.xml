@@ -3,5 +3,12 @@
 <beans>
 
     <bean id="TV" class="entity.US_Series"/>
+    <bean id="Link" class="entity.Link"/>
+    <bean id="LinkDao" class="dao.imp.Link_dao_imp">
+        <property name="sqlSessionTemplate" ref="sessionTemplate"/>
+    </bean>
+    <bean id="US_SeriesDao" class="dao.imp.US_Series_dao_imp">
+        <property name="sqlSessionTemplate" ref="sessionTemplate"/>
+    </bean>
 
 </beans>
