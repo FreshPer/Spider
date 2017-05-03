@@ -1,12 +1,12 @@
 package dao.imp;
 
-import dao.Link_dao;
+import dao.Seed_dao;
 import org.mybatis.spring.SqlSessionTemplate;
 
 /**
  * Created by mac on 03/05/2017.
  */
-public class Link_dao_imp implements Link_dao {
+public class Seed_dao_imp implements Seed_dao {
 
     private SqlSessionTemplate sqlSessionTemplate;
 
@@ -17,6 +17,4 @@ public class Link_dao_imp implements Link_dao {
     public void setSqlSessionTemplate(SqlSessionTemplate sqlSessionTemplate) {
         this.sqlSessionTemplate = sqlSessionTemplate;
     }
-
-
 }
